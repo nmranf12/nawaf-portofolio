@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhamad Nawaf Fahrulrozi — Portofolio Logistik &amp; Rantai Pasok</title>
+  <meta name="description" content="Portofolio Muhamad Nawaf Fahrulrozi, lulusan S-1 Manajemen Logistik ULBI, tersertifikasi BNSP Supervisor Gudang dan Distribusi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FFFFFF;
+      --surface: #F8F9FA;
+      --card: #FFFFFF;
+      --ink: #111318;
+      --muted: #667085;
+      --line: #EAECF0;
+      --yellow: #FFE600;
+      --yellow-hover: #F2DA00;
+      --accent-pink: #FF3B6B;
+      --accent-pink-hover: #E62E5C;
+      --dark-btn: #111318;
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --radius-pill: 999px;
+      --shadow-soft: 0 12px 32px rgba(17, 19, 24, 0.06);
+      --shadow-card: 0 4px 16px rgba(17, 19, 24, 0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 84px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* NAVIGATION */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-badge {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: var(--yellow);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 0.9rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      font-size: 0.925rem;
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--ink);
+    }
+
+    .nav-cta {
+      background: var(--dark-btn);
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border-radius: var(--radius-pill);
+      font-size: 0.875rem;
+      font-weight: 600;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      opacity: 0.92;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+    }
+
+    /* HERO SECTION */
+    .hero {
+      padding: 64px 0 48px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .pill-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--yellow);
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 4.8vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .hero-desc {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 50ch;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn-pink {
+      background: var(--accent-pink);
+      color: #FFFFFF;
+      padding: 14px 28px;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 8px 20px rgba(255, 59, 107, 0.24);
+    }
+
+    .btn-pink:hover {
+      background: var(--accent-pink-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-dark {
+      background: var(--dark-btn);
+      color: #FFFFFF;
+      padding: 14px 28px;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .btn-dark:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    /* HERO VISUAL CARD */
+    .hero-card {
+      position: relative;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 24px 24px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-status-bar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .status-dot {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--ink);
+      background: #FFFFFF;
+      padding: 5px 12px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--line);
+    }
+
+    .status-dot::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #12B76A;
+    }
+
+    .badge-cert {
+      background: var(--yellow);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: var(--radius-pill);
+    }
+
+    .portrait-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 320px;
+      aspect-ratio: 3 / 3.6;
+      border-radius: 18px 18px 0 0;
+      overflow: hidden;
+      background: #E9ECEF;
+    }
+
+    .portrait-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .floating-chip {
+      position: absolute;
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 10px 14px;
+      box-shadow: var(--shadow-soft);
+      font-size: 0.8rem;
+    }
+
+    .chip-left {
+      bottom: 24px;
+      left: 16px;
+      max-width: 185px;
+    }
+
+    .chip-right {
+      bottom: 24px;
+      right: 16px;
+      background: #FFFDF0;
+      border-color: #F5E042;
+      max-width: 185px;
+    }
+
+    .floating-chip strong {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--ink);
+    }
+
+    .floating-chip span {
+      color: var(--muted);
+      font-size: 0.75rem;
+      line-height: 1.3;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-card { max-width: 440px; margin: 0 auto; width: 100%; }
+    }
+
+    /* METRICS STRIP */
+    .metrics {
+      padding: 28px 0 64px;
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric-item {
+      padding: 28px 20px;
+      border-right: 1px solid var(--line);
+    }
+
+    .metric-item:last-child {
+      border-right: none;
+    }
+
+    .metric-num {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .metric-num span {
+      color: var(--accent-pink);
+    }
+
+    .metric-label {
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 768px) {
+      .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+      .metric-item:nth-child(2) { border-right: none; }
+      .metric-item:nth-child(1), .metric-item:nth-child(2) { border-bottom: 1px solid var(--line); }
+    }
+
+    /* ABOUT SECTION */
+    .section {
+      padding: 72px 0;
+    }
+
+    .section-alt {
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .section-title {
+      font-size: clamp(1.85rem, 3.4vw, 2.5rem);
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+      margin-bottom: 16px;
+    }
+
+    .section-title span {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+
+    .edu-box {
+      margin-top: 24px;
+      padding: 20px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+    }
+
+    .edu-box h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .edu-box p {
+      font-size: 0.875rem;
+      margin-bottom: 8px;
+    }
+
+    .course-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .course-pills span {
+      font-size: 0.76rem;
+      font-weight: 600;
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      color: var(--ink);
+    }
+
+    @media (max-width: 860px) {
+      .about-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+
+    /* INTERACTIVE COMPETENCIES */
+    .comp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 24px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .comp-header p {
+      max-width: 44ch;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .comp-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    .comp-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .comp-tab {
+      text-align: left;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--line);
+      padding: 22px 16px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.2s, padding-left 0.2s;
+      border-radius: 12px;
+    }
+
+    .comp-tab:hover {
+      background: rgba(17, 19, 24, 0.02);
+    }
+
+    .comp-tab.active {
+      background: #FFFFFF;
+      box-shadow: var(--shadow-card);
+      border-bottom-color: transparent;
+      padding-left: 22px;
+    }
+
+    .comp-tab h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .comp-tab.active h3::after {
+      content: "→";
+      color: var(--accent-pink);
+      font-weight: 800;
+    }
+
+    .comp-tab p {
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    .comp-detail-card {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-soft);
+      position: sticky;
+      top: 96px;
+    }
+
+    .comp-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .comp-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      display: grid;
+      place-items: center;
+      font-size: 1.25rem;
+    }
+
+    .comp-tool-badge {
+      background: var(--yellow);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: var(--radius-pill);
+    }
+
+    .comp-detail-card h3 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .comp-detail-card > p {
+      font-size: 0.925rem;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .comp-checklist {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 16px;
+      list-style: none;
+      margin-bottom: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .comp-checklist li {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .comp-checklist li::before {
+      content: "✓";
+      color: var(--accent-pink);
+      font-weight: 800;
+    }
+
+    .comp-detail-card .btn-pink {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+
+    @media (max-width: 860px) {
+      .comp-grid { grid-template-columns: 1fr; }
+      .comp-detail-card { position: static; }
+    }
+
+    /* EXPERIENCE TIMELINE */
+    .exp-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 32px;
+    }
+
+    .exp-card {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 26px 28px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .exp-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .exp-role {
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+
+    .exp-org {
+      color: var(--muted);
+      font-size: 0.925rem;
+      font-weight: 500;
+    }
+
+    .exp-date {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    .exp-date.current {
+      background: var(--yellow);
+      border-color: var(--yellow);
+    }
+
+    .exp-bullets {
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .exp-bullets li {
+      margin-bottom: 6px;
+    }
+
+    /* PROJECTS & EVIDENCE GALLERY */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .work-card {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .work-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .work-thumb {
+      width: 100%;
+      height: 235px;
+      background: #F1F3F5;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+      cursor: zoom-in;
+    }
+
+    .work-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .work-thumb:hover img {
+      transform: scale(1.03);
+    }
+
+    .work-thumb.contain img {
+      object-fit: contain;
+      padding: 12px;
+      background: #F8F9FA;
+    }
+
+    .work-year {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      z-index: 2;
+      background: rgba(17, 19, 24, 0.86);
+      color: #FFFFFF;
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+    }
+
+    .zoom-hint {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+    }
+
+    .work-body {
+      padding: 22px 24px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .work-body h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .work-body p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 16px;
+      flex: 1;
+    }
+
+    .work-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .work-tags span {
+      font-size: 0.76rem;
+      font-weight: 600;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+    }
+
+    @media (max-width: 768px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+
+    /* CERTIFICATIONS SHOWCASE */
+    .cert-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .cert-card {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .cert-img-box {
+      height: 250px;
+      background: #F8F9FA;
+      border-bottom: 1px solid var(--line);
+      padding: 14px;
+      display: grid;
+      place-items: center;
+      position: relative;
+      cursor: zoom-in;
+    }
+
+    .cert-img-box img {
+      max-height: 100%;
+      width: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .cert-body {
+      padding: 20px 22px 22px;
+    }
+
+    .cert-issuer {
+      display: inline-block;
+      background: var(--yellow);
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 10px;
+    }
+
+    .cert-body h3 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+      line-height: 1.35;
+    }
+
+    .cert-body p {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+
+    .extra-note {
+      margin-top: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 900px) {
+      .cert-gallery { grid-template-columns: 1fr; }
+    }
+
+    /* LIGHTBOX MODAL */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(17, 19, 24, 0.88);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox-inner {
+      max-width: 960px;
+      max-height: 90vh;
+      background: #FFFFFF;
+      border-radius: 18px;
+      padding: 14px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lightbox-inner img {
+      max-height: 76vh;
+      width: auto;
+      border-radius: 10px;
+    }
+
+    .lightbox-caption {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--ink);
+      text-align: center;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: -14px;
+      right: -14px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: none;
+      background: var(--yellow);
+      color: var(--ink);
+      font-weight: 800;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* CONTACT CTA BANNER */
+    .cta-box {
+      background: var(--ink);
+      color: #FFFFFF;
+      border-radius: 32px;
+      padding: 56px 40px;
+      text-align: center;
+    }
+
+    .cta-box .pill-tag {
+      margin-bottom: 16px;
+    }
+
+    .cta-box h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 14px;
+    }
+
+    .cta-box p {
+      color: #D0D5DD;
+      max-width: 48ch;
+      margin: 0 auto 28px;
+    }
+
+    .cta-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn-outline-light {
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFFFFF;
+      padding: 14px 26px;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+
+    .btn-outline-light:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    footer {
+      padding: 32px 0 48px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+  </style>
+  <script>
+    function tryNextExt(img) {
+      const exts = ['png', 'jpg', 'jpeg', 'webp', 'jfif'];
+      const base = img.dataset.base;
+      if (!base) return;
+      const nextIdx = parseInt(img.dataset.extIdx || '0', 10) + 1;
+      if (nextIdx < exts.length) {
+        img.dataset.extIdx = nextIdx;
+        img.src = base + '.' + exts[nextIdx];
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="container nav-inner">
+      <a href="#atas" class="brand">
+        <span class="brand-badge">MN</span>
+        <span>Nawaf Fahrulrozi</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kompetensi">Kompetensi</a></li>
+        <li><a href="#pengalaman">Pengalaman</a></li>
+        <li><a href="#dokumentasi">Dokumentasi &amp; Proyek</a></li>
+        <li><a href="#sertifikasi">Sertifikasi</a></li>
+      </ul>
+      <a href="#kontak" class="nav-cta">Hubungi Saya</a>
+    </div>
+  </header>
+
+  <main id="atas">
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="pill-tag">Halo, Saya Muhamad Nawaf Fahrulrozi 👋</div>
+          <h1>
+            Spesialis Operasional Gudang <span>&amp; Distribusi Logistik.</span>
+          </h1>
+          <p class="hero-desc">
+            Lulusan S-1 Manajemen Logistik Universitas Logistik dan Bisnis Internasional (ULBI) dengan sertifikasi kompetensi BNSP Supervisor Gudang dan Distribusi serta pelatihan resmi SAP01. Berpengalaman dalam verifikasi surat jalan, sistem WMS, dan simulasi rantai pasok.
+          </p>
+          <div class="hero-actions">
+            <a href="#kontak" class="btn-pink">Rekrut / Hubungi Saya</a>
+            <a href="#dokumentasi" class="btn-dark">Lihat Portofolio</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-status-bar">
+            <span class="status-dot">Siap Bekerja</span>
+            <span class="badge-cert">Tersertifikasi BNSP &amp; SAP</span>
+          </div>
+          <div class="portrait-wrap">
+            <img src="foto-profil.png" data-base="foto-profil" onerror="tryNextExt(this)" alt="Foto Muhamad Nawaf Fahrulrozi">
+          </div>
+          <div class="floating-chip chip-left">
+            <strong>PT Pos Logistik</strong>
+            <span>Magang Operasional Gudang &amp; Distribusi (Jabar)</span>
+          </div>
+          <div class="floating-chip chip-right">
+            <strong>BNSP Logistik</strong>
+            <span>Supervisor Gudang &amp; Distribusi (2026)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY METRICS -->
+    <section class="metrics" aria-label="Ringkasan capaian">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <div class="metric-num">±30<span>/hari</span></div>
+            <div class="metric-label">Surat jalan diverifikasi saat magang di PT Pos Logistik</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-num">3,51<span>/4,00</span></div>
+            <div class="metric-label">IPK S-1 Manajemen Logistik ULBI Bandung</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-num">±120<span>+</span></div>
+            <div class="metric-label">Konten edukasi rantai pasok &amp; logistik diproduksi</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-num">94<span>+</span></div>
+            <div class="metric-label">Responden riset kuantitatif rantai pasok ritel</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & EDUCATION -->
+    <section id="tentang" class="section">
+      <div class="container about-grid">
+        <div>
+          <h2 class="section-title">
+            Menjaga akurasi stok <span>dan ketepatan pengiriman sejak hari pertama.</span>
+          </h2>
+          <div class="edu-box">
+            <h4>Universitas Logistik dan Bisnis Internasional (ULBI)</h4>
+            <p>S-1 Manajemen Logistik • Sep 2022 – Nov 2026 • IPK 3,51 / 4,00</p>
+            <div class="course-pills">
+              <span>Manajemen Gudang (A)</span>
+              <span>Manajemen Persediaan EOQ (A)</span>
+              <span>Sistem Informasi Logistik (A)</span>
+              <span>Pangkalan Data SQL (A)</span>
+              <span>Manajemen Mutu Terpadu (A)</span>
+              <span>Manajemen Distribusi (AB)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p>
+            Saya adalah lulusan S-1 Manajemen Logistik dari ULBI Bandung yang teliti, komunikatif, dan terbiasa bekerja dengan standar operasional lapangan maupun sistem ERP/WMS.
+          </p>
+          <p>
+            Selama menjalani magang di <strong>PT Pos Logistik Kantor Regional Jawa Barat</strong>, saya menangani operasional distribusi barang keluar (outgoing), verifikasi fisik muatan, pencatatan pendapatan dan manifest pada sistem <strong>POLIMODA / WMS</strong>, serta rekonsiliasi data di Microsoft Excel.
+          </p>
+          <p>
+            Selain operasional lapangan, saya menguasai simulasi jaringan rantai pasok menggunakan <strong>SCM Globe</strong> dan <strong>AnyLogic</strong>, penyusunan laporan P&amp;L serta KPI inventori, perhitungan persediaan metode <strong>EOQ</strong>, hingga pengelolaan logistik acara di HIPMI PT ULBI.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETENCIES (INTERACTIVE SPLIT PANEL) -->
+    <section id="kompetensi" class="section section-alt">
+      <div class="container">
+        <div class="comp-header">
+          <h2 class="section-title" style="margin-bottom:0;">Kompetensi Inti<br><span>Logistik &amp; Gudang</span></h2>
+          <p>Klik setiap bidang keahlian di sebelah kiri untuk melihat detail keterampilan teknis dan perangkat yang dikuasai.</p>
+        </div>
+
+        <div class="comp-grid">
+          <div class="comp-list" role="tablist">
+            <button class="comp-tab active" type="button" onclick="selectComp(0, this)">
+              <h3>Distribusi Outgoing &amp; Pergudangan</h3>
+              <p>Penyortiran, verifikasi fisik, dan pengiriman tepat waktu ke tujuan regional.</p>
+            </button>
+            <button class="comp-tab" type="button" onclick="selectComp(1, this)">
+              <h3>Administrasi WMS, SAP &amp; Surat Jalan</h3>
+              <p>Validasi dokumen pengiriman, input POLIMODA/WMS, SAP01, dan rekonsiliasi Excel.</p>
+            </button>
+            <button class="comp-tab" type="button" onclick="selectComp(2, this)">
+              <h3>Optimalisasi Rute &amp; Biaya Transportasi</h3>
+              <p>Evaluasi trayek pengiriman dan perhitungan tarif distribusi antarkota.</p>
+            </button>
+            <button class="comp-tab" type="button" onclick="selectComp(3, this)">
+              <h3>Manajemen Persediaan &amp; Simulasi SCM</h3>
+              <p>Pengendalian stok EOQ, FIFO/FEFO, analisis P&amp;L KPI, dan simulasi SCM Globe / AnyLogic.</p>
+            </button>
+          </div>
+
+          <div class="comp-detail-card" id="comp-card">
+            <div class="comp-card-top">
+              <div class="comp-icon" id="comp-icon">📦</div>
+              <span class="comp-tool-badge" id="comp-badge">WMS &amp; Operasional</span>
+            </div>
+            <h3 id="comp-title">Distribusi Outgoing &amp; Pergudangan</h3>
+            <p id="comp-desc">Mengelola alur barang keluar mulai dari penyortiran muatan, pengecekan kondisi dan jumlah fisik barang, hingga pemuatan ke armada truk agar selisih pengiriman minimal.</p>
+            <ul class="comp-checklist" id="comp-list">
+              <li>Inbound &amp; Outbound</li>
+              <li>Pemeriksaan Fisik</li>
+              <li>Koordinasi Armada</li>
+              <li>Tata Letak Gudang</li>
+              <li>Standar K3 Gudang</li>
+              <li>Ketepatan Jadwal</li>
+            </ul>
+            <a href="#kontak" class="btn-pink">Diskusikan Kebutuhan Tim</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="pengalaman" class="section">
+      <div class="container">
+        <h2 class="section-title">Pengalaman Kerja <span>&amp; Organisasi</span></h2>
+        <div class="exp-list">
+          <article class="exp-card">
+            <div class="exp-top">
+              <div>
+                <h3 class="exp-role">Staf Magang Operasional Logistik dan Distribusi</h3>
+                <div class="exp-org">PT Pos Logistik Kantor Regional Jawa Barat • Bandung</div>
+              </div>
+              <span class="exp-date current">Agu 2025 – Sep 2025</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Mengelola distribusi barang keluar dari tahap penyortiran, pemeriksaan fisik, hingga pengiriman ke berbagai tujuan regional (Jakarta Timur, Surabaya, dan area Jawa Barat).</li>
+              <li>Memverifikasi kelengkapan ±30 surat jalan (Surat Perintah Jalan / Packing List) per hari untuk distribusi pelanggan korporat seperti PT PLN UP3 Bandung.</li>
+              <li>Menginput data manifest, kuantitas kantong, berat muatan, serta pencatatan pendapatan ke sistem <strong>POLIMODA (WMS)</strong> dan laporan rekapitulasi Microsoft Excel secara akurat.</li>
+              <li>Menghitung biaya distribusi dan berkoordinasi harian dengan staf gudang serta pengemudi armada untuk menentukan trayek optimal.</li>
+            </ul>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-top">
+              <div>
+                <h3 class="exp-role">Spesialis Pemasaran Logistik</h3>
+                <div class="exp-org">Upgradein.id • Bandung</div>
+              </div>
+              <span class="exp-date">Des 2024 – Jun 2025</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Memproduksi ±120 konten edukasi teknis seputar pergudangan, distribusi, dan karier rantai pasok selama 6 bulan (rata-rata 5 konten per minggu).</li>
+              <li>Mendukung logistik pelaksanaan webinar dan pelatihan daring serta menganalisis interaksi 300+ pengguna aktif hingga keterlibatan audiens meningkat ±45%.</li>
+            </ul>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-top">
+              <div>
+                <h3 class="exp-role">Koordinator Penelitian, Pengembangan dan Logistik</h3>
+                <div class="exp-org">HIPMI PT ULBI • Bandung</div>
+              </div>
+              <span class="exp-date">Okt 2024 – Sep 2025</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Mengelola logistik menyeluruh untuk lebih dari 5 program kewirausahaan (kelas bisnis, studi banding, webinar, dan kunjungan industri) meliputi pengadaan perlengkapan dan koordinasi vendor.</li>
+              <li>Memetakan kebutuhan anggota sehingga interaksi organisasi meningkat 40%.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO & DOCUMENTATION GALLERY -->
+    <section id="dokumentasi" class="section section-alt">
+      <div class="container">
+        <div class="comp-header">
+          <h2 class="section-title" style="margin-bottom:0;">Dokumentasi Lapangan<br><span>&amp; Proyek Simulasi</span></h2>
+          <p>Klik pada gambar untuk memperbesar bukti operasional gudang, sistem administrasi WMS, serta hasil pemodelan rantai pasok.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Card 1 -->
+          <article class="work-card">
+            <div class="work-thumb" onclick="openLightboxFromCard(this, 'Operasional Armada & Verifikasi Muatan — PT Pos Logistik')">
+              <span class="work-year">2025 • Pos Logistics</span>
+              <span class="zoom-hint">Perbesar 🔍</span>
+              <img src="dok-pos-2.png" data-base="dok-pos-2" onerror="tryNextExt(this)" alt="Operasional armada truk dan tim lapangan PT Pos Logistik">
+            </div>
+            <div class="work-body">
+              <h3>Operasional Armada &amp; Verifikasi Muatan</h3>
+              <p>Pengecekan kesiapan armada truk, pengamanan muatan terpal, serta pencocokan fisik barang sebelum diberangkatkan dari hub regional.</p>
+              <div class="work-tags">
+                <span>Outbound Logistics</span>
+                <span>Pemeriksaan Fisik</span>
+                <span>K3 Lapangan</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="work-card">
+            <div class="work-thumb contain" onclick="openLightboxFromCard(this, 'Pencatatan Manifest & Pendapatan pada Sistem POLIMODA Pos Logistics')">
+              <span class="work-year">2025 • Sistem WMS</span>
+              <span class="zoom-hint">Perbesar 🔍</span>
+              <img src="dok-polimoda.png" data-base="dok-polimoda" onerror="tryNextExt(this)" alt="Tampilan sistem POLIMODA Pos Logistics">
+            </div>
+            <div class="work-body">
+              <h3>Pencatatan Manifest &amp; Pendapatan di POLIMODA</h3>
+              <p>Pengelolaan data nomor manifest, tipe rute primer, kantor asal/tujuan, kuantitas unit, serta validasi berat kiriman pada sistem POLIMODA Pos Logistics.</p>
+              <div class="work-tags">
+                <span>POLIMODA</span>
+                <span>WMS</span>
+                <span>Validasi Manifest</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="work-card">
+            <div class="work-thumb contain" onclick="openLightboxFromCard(this, 'Surat Perintah Jalan / Packing List PT Pos Logistik Indonesia')">
+              <span class="work-year">2025 • Administrasi</span>
+              <span class="zoom-hint">Perbesar 🔍</span>
+              <img src="dok-surat-jalan.png" data-base="dok-surat-jalan" onerror="tryNextExt(this)" alt="Surat Perintah Jalan dan Packing List Pos Logistics">
+            </div>
+            <div class="work-body">
+              <h3>Verifikasi Surat Perintah Jalan &amp; Packing List</h3>
+              <p>Pemeriksaan dokumen pengiriman (No. SJ/POSLOG/JBR) untuk distribusi barang proyek kelistrikan PT PLN UP3 Bandung dengan akurasi tinggi.</p>
+              <div class="work-tags">
+                <span>Surat Jalan</span>
+                <span>Packing List</span>
+                <span>B2B Distribution</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="work-card">
+            <div class="work-thumb contain" onclick="openLightboxFromCard(this, 'Laporan Outgoing Primer SPP Bandung — Rekapitulasi Excel')">
+              <span class="work-year">2025 • Reporting</span>
+              <span class="zoom-hint">Perbesar 🔍</span>
+              <img src="dok-rekap-excel.png" data-base="dok-rekap-excel" onerror="tryNextExt(this)" alt="Laporan Outgoing Primer SPP Bandung di Excel">
+            </div>
+            <div class="work-body">
+              <h3>Rekapitulasi Laporan Outgoing Primer SPP Bandung</h3>
+              <p>Penyusunan laporan harian jumlah kantong, tonase berat kiriman, tarif, dan BSU per trayek angkutan menggunakan Microsoft Excel.</p>
+              <div class="work-tags">
+                <span>Microsoft Excel</span>
+                <span>Rekonsiliasi Data</span>
+                <span>Cost Tracking</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="work-card">
+            <div class="work-thumb contain" onclick="openLightboxFromCard(this, 'Simulasi Jaringan Rantai Pasok KFC Bandung di SCM Globe')">
+              <span class="work-year">2024–2025 • SCM Globe</span>
+              <span class="zoom-hint">Perbesar 🔍</span>
+              <img src="dok-scm-globe.png" data-base="dok-scm-globe" onerror="tryNextExt(this)" alt="Simulasi Rantai Pasok KFC di SCM Globe">
+            </div>
+            <div class="work-body">
+              <h3>Simulasi Rantai Pasok Gerai KFC (SCM Globe)</h3>
+              <p>Pemodelan aliran distribusi antarkota (Jakarta – Bandung – Semarang – Surabaya) serta pemantauan <em>Facility Statistics</em> kapasitas penyimpanan, permintaan harian, dan stok <em>on-hand</em> (Ayam, Kentang, Beras, Bumbu).</p>
+              <div class="work-tags">
+                <span>SCM Globe</span>
+                <span>Inventory Simulation</span>
+                <span>Facility Capacity</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="work-card">
+            <div class="work-thumb contain" onclick="openLightboxFromCard(this, 'KFC Kota Bandung: 30-Day P&L Report with Key Performance Indicators')">
+              <span class="work-year">2024–2025 • Analisis KPI</span>
+              <span class="zoom-hint">Perbesar 🔍</span>
+              <img src="dok-kfc-pnl.png" data-base="dok-kfc-pnl" onerror="tryNextExt(this)" alt="KFC Kota Bandung 30-Day P&L Report with Key Performance Indicators">
+            </div>
+            <div class="work-body">
+              <h3>Analisis 30-Day P&amp;L &amp; KPI Rantai Pasok KFC Bandung</h3>
+              <p>Evaluasi kinerja finansial dan logistik selama 30 hari mencakup <em>Sales Revenue</em>, biaya penyimpanan gudang (Gudang Wet &amp; Dry), biaya transportasi, emisi karbon armada, dan <em>Inventory Days of Supply</em> pada cabang Surya Sumantri, Setia Budi, dan Dago.</p>
+              <div class="work-tags">
+                <span>30-Day P&amp;L</span>
+                <span>Supply Chain KPI</span>
+                <span>Inventory Days of Supply</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="work-card">
+            <div class="work-thumb" onclick="openLightboxFromCard(this, 'Pemetaan Rute Distribusi Regional Bandung – Yogyakarta')">
+              <span class="work-year">2024 • Pemetaan Rute</span>
+              <span class="zoom-hint">Perbesar 🔍</span>
+              <img src="dok-rute-peta.png" data-base="dok-rute-peta" onerror="tryNextExt(this)" alt="Pemetaan rute distribusi Bandung ke Yogyakarta">
+            </div>
+            <div class="work-body">
+              <h3>Pemetaan Trayek &amp; Jaringan Distribusi Pulau Jawa</h3>
+              <p>Analisis jalur distribusi koridor utama Jawa Barat – Jawa Tengah – DIY menggunakan AnyLogic dan pemetaan geografis untuk menekan waktu tempuh pengiriman.</p>
+              <div class="work-tags">
+                <span>AnyLogic</span>
+                <span>Route Optimization</span>
+                <span>Network Design</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="work-card">
+            <div class="work-thumb" onclick="openLightboxFromCard(this, 'Tim Operasional Regional Jawa Barat — PT Pos Indonesia')">
+              <span class="work-year">2025 • Pos Indonesia</span>
+              <span class="zoom-hint">Perbesar 🔍</span>
+              <img src="dok-pos-1.png" data-base="dok-pos-1" onerror="tryNextExt(this)" alt="Tim Operasional di Gedung Pos Indonesia">
+            </div>
+            <div class="work-body">
+              <h3>Kolaborasi Lintas Divisi Regional Jawa Barat</h3>
+              <p>Sinergi harian bersama tim operasional, admin gudang, dan jajaran manajemen di lingkungan PT Pos Indonesia / Pos Logistik Bandung.</p>
+              <div class="work-tags">
+                <span>Teamwork</span>
+                <span>Koordinasi Divisi</span>
+                <span>Pos Indonesia</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="sertifikasi" class="section">
+      <div class="container">
+        <div class="comp-header">
+          <h2 class="section-title" style="margin-bottom:0;">Sertifikasi Resmi<br><span>&amp; Penghargaan</span></h2>
+          <p>Klik pada sertifikat untuk melihat detail nomor registrasi dan kualifikasi secara jelas.</p>
+        </div>
+
+        <div class="cert-gallery">
+          <!-- Cert 1: BNSP -->
+          <article class="cert-card">
+            <div class="cert-img-box" onclick="openLightboxFromCard(this, 'Sertifikat Kompetensi BNSP — Supervisor Gudang dan Distribusi (22 Juni 2026)')">
+              <span class="zoom-hint">Perbesar 🔍</span>
+              <img src="bnsp.jpeg" data-base="sertifikat-bnsp" onerror="tryNextExt(this)" alt="Sertifikat Kompetensi BNSP Supervisor Gudang dan Distribusi">
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">BNSP • LSP Logistik Indonesia</span>
+              <h3>Supervisor Gudang dan Distribusi</h3>
+              <p>No. Reg. LTS.093.00124.2026 • Bidang Pergudangan dan Jasa Penunjang Angkutan (Diterbitkan 22 Juni 2026).</p>
+            </div>
+          </article>
+
+          <!-- Cert 2: SAP -->
+          <article class="cert-card">
+            <div class="cert-img-box" onclick="openLightboxFromCard(this, 'Certificate of Accomplishment — SAP01 SAP Overview (03 April 2026)')">
+              <span class="zoom-hint">Perbesar 🔍</span>
+              <img src="sertifikat-sap.png" data-base="sertifikat-sap" onerror="tryNextExt(this)" alt="Sertifikat SAP01 SAP Overview Edugate">
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">SAP University Partnership • Edugate</span>
+              <h3>SAP01 — SAP Overview</h3>
+              <p>Certificate of Accomplishment (ID 550188588) • Diterbitkan oleh PT Harfan Tri Megah pada 03 April 2026.</p>
+            </div>
+          </article>
+
+          <!-- Cert 3: HIPMI -->
+          <article class="cert-card">
+            <div class="cert-img-box" onclick="openLightboxFromCard(this, 'Sertifikat Apresiasi Pengurus HIPMI PT ULBI Periode 2024–2025')">
+              <span class="zoom-hint">Perbesar 🔍</span>
+              <img src="sertifikat-hipmi.png" data-base="sertifikat-hipmi" onerror="tryNextExt(this)" alt="Sertifikat Apresiasi HIPMI PT ULBI">
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Organisasi • HIPMI PT ULBI</span>
+              <h3>Koordinator Litbang &amp; Logistik</h3>
+              <p>Sertifikat apresiasi atas kontribusi dan pengelolaan logistik program kerja periode 2024–2025.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="extra-note">
+          <div>
+            <strong>Kualifikasi Tambahan:</strong> TOEFL EpR (Skor 453 — Pusat Bahasa ULBI) • Penelitian Skripsi Kuantitatif PLS-SEM Rantai Pasok Ritel (2026)
+          </div>
+          <span class="badge-cert">Siap Penempatan Segera</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="kontak" class="section" style="padding-top: 24px;">
+      <div class="container">
+        <div class="cta-box">
+          <div class="pill-tag">Terbuka untuk Peluang Kerja</div>
+          <h2>Siap memperkuat operasional gudang &amp; distribusi Anda.</h2>
+          <p>Domisili Depok / Cianjur, bersedia ditempatkan di area Jabodetabek maupun Jawa Barat. Silakan hubungi melalui email atau WhatsApp.</p>
+          <div class="cta-links">
+            <a href="mailto:nawaffahrulrozi25@gmail.com" class="btn-pink">nawaffahrulrozi25@gmail.com</a>
+            <a href="https://wa.me/628966186900" target="_blank" rel="noopener" class="btn-outline-light">WhatsApp: 0896-6186-0900</a>
+            <a href="https://linkedin.com/in/nawaffahrulrozi" target="_blank" rel="noopener" class="btn-outline-light">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Muhamad Nawaf Fahrulrozi — S-1 Manajemen Logistik (ULBI)
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" type="button" aria-label="Tutup" onclick="closeLightbox(event, true)">✕</button>
+      <img id="lightbox-img" src="" alt="Pratinjau Dokumen">
+      <div class="lightbox-caption" id="lightbox-cap"></div>
+    </div>
+  </div>
+
+  <script>
+    const compData = [
+      {
+        icon: "📦",
+        badge: "WMS & Operasional",
+        title: "Distribusi Outgoing & Pergudangan",
+        desc: "Mengelola alur barang keluar mulai dari penyortiran muatan, pengecekan kondisi dan jumlah fisik barang, hingga pemuatan ke armada truk agar selisih pengiriman minimal.",
+        items: ["Inbound & Outbound", "Pemeriksaan Fisik", "Koordinasi Armada", "Tata Letak Gudang", "Standar K3 Gudang", "Ketepatan Jadwal"]
+      },
+      {
+        icon: "📋",
+        badge: "POLIMODA, SAP01 & Excel",
+        title: "Administrasi WMS, SAP & Surat Jalan",
+        desc: "Memverifikasi ±30 surat jalan per hari, menginput manifest pengiriman ke sistem POLIMODA/WMS, memahami alur ERP SAP01, serta melakukan rekonsiliasi data harian pada Microsoft Excel.",
+        items: ["Surat Perintah Jalan", "Input Sistem WMS", "SAP01 Overview", "Rekonsiliasi Excel", "Packing List", "Pelaporan Harian"]
+      },
+      {
+        icon: "🚚",
+        badge: "Efisiensi Trayek",
+        title: "Optimalisasi Rute & Biaya Transportasi",
+        desc: "Mengevaluasi rute distribusi antarkota, menghitung tarif dan biaya angkut berdasarkan tonase/kantong, serta berkoordinasi dengan tim armada.",
+        items: ["Evaluasi Trayek", "Perhitungan Tarif", "Kontrol Biaya Angkut", "Penjadwalan Kirim", "Koordinasi Vendor", "Pemetaan Rute"]
+      },
+      {
+        icon: "📊",
+        badge: "SCM Globe, AnyLogic & EOQ",
+        title: "Manajemen Persediaan & Simulasi SCM",
+        desc: "Menerapkan metode Economic Order Quantity (EOQ), rotasi stok FIFO/FEFO, analisis laporan P&L & KPI inventori, serta pemodelan jaringan rantai pasok di SCM Globe dan AnyLogic.",
+        items: ["Simulasi SCM Globe", "Pemodelan AnyLogic", "Analisis 30-Day P&L", "Metode EOQ", "Sistem FIFO / FEFO", "Pangkalan Data SQL"]
+      }
+    ];
+
+    function selectComp(index, btn) {
+      document.querySelectorAll('.comp-tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+
+      const d = compData[index];
+      document.getElementById('comp-icon').textContent = d.icon;
+      document.getElementById('comp-badge').textContent = d.badge;
+      document.getElementById('comp-title').textContent = d.title;
+      document.getElementById('comp-desc').textContent = d.desc;
+      document.getElementById('comp-list').innerHTML = d.items.map(i => `<li>${i}</li>`).join('');
+    }
+
+    function openLightboxFromCard(container, caption) {
+      const cardImg = container.querySelector('img');
+      if (!cardImg) return;
+      const lb = document.getElementById('lightbox');
+      document.getElementById('lightbox-img').src = cardImg.src;
+      document.getElementById('lightbox-cap').textContent = caption;
+      lb.classList.add('open');
+    }
+
+    function closeLightbox(e, force) {
+      if (force || e.target.id === 'lightbox') {
+        document.getElementById('lightbox').classList.remove('open');
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.getElementById('lightbox').classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>
